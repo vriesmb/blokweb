@@ -1,13 +1,211 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+
+/* @docs
+label: Box Sizing
+
+note: |
+  Use border-box by default, globally.
+
+category: global
+*/
+*, ::before, ::after { box-sizing: border-box; }
+
+
+/* @docs
+label: Line Sizing
+
+note: |
+  Consistent line-spacing,
+  even when inline elements have different line-heights.
+
+links:
+  - https://drafts.csswg.org/css-inline-3/#line-sizing-property
+
+category: global
+*/
+
+/* @docs
+label: Body Margins
+
+note: |
+  Remove the tiny space around the edge of the page.
+
+category: global
+*/
+body { margin: 0; }
+
+
+/* @docs
+label: Hidden Attribute
+
+note: |
+  Maintain `hidden` behaviour when overriding `display` values.
+
+  category: global
+*/
+[hidden] { display: none; }
+
+
+
+/* @docs
+label: H1 Margins
+
+note: |
+  Keep h1 margins consistent, even when nested.
+
+category: typography
+*/
+h1 { margin: 0.67em 0; }
+
+
+/* @docs
+label: Pre Wrapping
+
+note: |
+  Overflow by default is bad...
+
+category: typography
+*/
+pre { white-space: pre-wrap; }
+
+
+/* @docs
+label: Horizontal Rule
+
+note: |
+  1. Solid, thin horizontal rules
+  2. Remove Firefox `color: gray`
+  3. Remove default `1px` height, and common `overflow: hidden`
+
+category: typography
+*/
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
 }
 
 
+/* @docs
+label: Responsive Embeds
+
+note: |
+  1. Block display is usually what we want
+  2. The `vertical-align` removes strange space-below in case authors overwrite the display value
+  3. Responsive by default
+  4. Audio without `[controls]` remains hidden by default
+
+category: embedded elements
+*/
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  /* vertical-align: middle; */
+  max-width: 100%;
+}
+audio:not([controls]) { display:none; }
 
 
+/* @docs
+label: Responsive Images
+
+note: |
+  These new elements display inline by default,
+  but that's not the expected behavior for either one.
+  This can interfere with proper layout and aspect-ratio handling.
+
+  1. Remove the unnecessary wrapping `picture`, while maintaining contents
+  2. Source elements have nothing to display, so we hide them entirely
+
+category: embedded elements
+*/
+picture { display: contents; }
+source { display: none; }
+
+
+/* @docs
+label: Aspect Ratios
+
+note: |
+  Maintain intrinsic aspect ratios when `max-width` is applied.
+  `iframe`, `embed`, and `object` are also embedded,
+  but have no intrinsic ratio,
+  so their `height` needs to be set explicitly.
+
+category: embedded elements
+*/
+img, svg, video, canvas {
+  height: auto;
+}
+
+
+/* @docs
+label: Audio Width
+
+note: |
+  There is no good reason elements default to 300px,
+  and audio files are unlikely to come with a width attribute.
+
+category: embedded elements
+*/
+audio { width: 100%; }
+
+/* @docs
+label: Image Borders
+
+note: |
+  Remove the border on images inside links in IE 10 and earlier.
+
+category: legacy browsers
+*/
+img { border-style: none; }
+
+
+/* @docs
+label: SVG Overflow
+
+note: |
+  Hide the overflow in IE 10 and earlier.
+
+category: legacy browsers
+*/
+svg { overflow: hidden; }
+
+
+/* @docs
+label: HTML5 Elements
+
+note: |
+  Default block display on HTML5 elements.
+  For oldIE to apply this styling one needs to add some JS as well (i.e. `document.createElement("main")`)
+
+links:
+  - https://www.sitepoint.com/html5-older-browsers-and-the-shiv/
+
+category: legacy browsers
+*/
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+
+/* @docs
+label: Checkbox & Radio Inputs
+
+note: |
+  1. Add the correct box sizing in IE 10
+  2. Remove the padding in IE 10
+
+category: legacy browsers
+*/
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
 
 
 /*********************/
@@ -15,17 +213,193 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  --color-default:#111;
+	--color-text:#eee;
+	--color-background:#111;
+
+  -webkit-font-smoothing: antialiased;
+
+  --min-vh: 0.667rem;
+  --header-height: 3rem;
+  --header-padding: 1.25rem;
+  --max: 100%;
 }
 
+header section > h2{
+  visibility: hidden;
+}
 
-
-
+body{
+    color: var(--color-deafault);
+    font-family: 'Proxima Nova Th',Arial,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
 
 /****************/
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/****************/
+  /* HEADER */
+/****************/
 
+header{
+  z-index: 99;
+  display: block;
+  height: 3rem;
+  position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  
+  background-color: #111;
+
+  /* background-color: hotpink; */
+}
+
+header section{
+  position: relative;
+  margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--header-padding);
+    padding-right: var(--header-padding);
+    width: var(--max);
+    height: var(--max);
+  /* background-color: red; */
+}
+
+header section > div:first-of-type > img{
+  display: block;
+  left: calc(50% - 0.9rem);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.9rem;
+}
+
+header section nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  /* background-color: green; */
+}
+
+header section nav div:first-of-type{
+display: block;
+
+/* background-color: aqua; */
+}
+
+
+header section nav div:last-of-type{
+display: flex;
+justify-content: space-between;
+
+/* background-color: aquamarine; */
+}
+
+header section nav div:first-of-type img,
+header section nav div:last-of-type img{
+  max-width: 1.5rem;
+  
+}
+
+header section nav div:last-of-type img:nth-of-type(2),
+header section nav div:last-of-type img:nth-of-type(3){
+  margin-left: 1.4rem;
+}
+
+
+
+/*********************************/
+/* 1st section [Video x PORSCHE] */
+/*********************************/
+main > section:first-of-type{
+  /* height: calc(var(--min-vh, 1vh)*100 - 5rem); */
+  /* background-color: blue; */
+  background-image: linear-gradient(180deg,transparent,#000);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+    width: 100%;
+    height: calc(100vh - 3rem);
+    overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff; /* Text color */
+}
+
+main > section:first-of-type article > span{
+  font-family: Helvetica ,sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+
+
+
+/*********************************/
+/* 2nd section [watches] */
+/*********************************/
+
+main > section:nth-of-type(2){
+background-image: url(
+  https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw79f46b18/images/Landing/Porsche/Chronosprint/product-carousel-background-m.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.content{
+  /* height: 40vh; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.content h3{
+  font-size: 1.5rem;
+  margin: 0.3em;
+}
+
+.content button p{
+color: white;
+}
+
+.content button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.content button img{
+  rotate: 90deg;
+  width: 2.5em;
+}

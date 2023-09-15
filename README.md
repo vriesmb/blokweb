@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hoogstwaarschijnlijk Niv. 'Zwart' om echt het maximale uit dit vak te halen, maar in geval van nood of tijdgebrek door prive Niv. 'Rood'.
 
   #### Je focus:
-  Responsiveness
+  Surface Plane
  
 </details>
 
@@ -40,10 +40,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.tagheuer.com/nl/en/
 
   Pagina 2:
-  https://www.tagheuer.com/nl/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-heuer-02-automatic/CBL2184.FT6236.html
+ https://www.tagheuer.com/nl/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-heuer-02-automatic/CBL2182.FT6235.html
 
-  Óf als pagina 2:
-  https://www.tagheuer.com/nl/en/timepieces/collections/tag-heuer-monaco/39-mm-calibre-heuer-02/CBL2180.FC6497.html
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepage Tag Heuer
   <img src="readme-images/1.0.PNG" width="375px" alt="omschrijving van de pagina">
@@ -75,6 +73,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  <ul>
+    <li>Tag Heuer horloge detailpagina skipt met tab wat content die het horloge moet toelichten. </li>
+    <li>Tag Heuer homepagina is vrij groed tab-baar. Goede volgorde en blangrijke elementen als: winkelmandje uitvouwen, shopping cart openen, light en dark mode activation voor afbeelding.</li>
+    <li>Videos hebben controls om audio uit/aan te zetten en te pauzeren.</li>
+    <li>Soms tijdens tabben is er geen visible focus, het lijkt dat of hij iets wilt focussen wat op de achtergrond aanwezig is maar niet in zicht.</li>
+    <li>Website is visueel, hier en daar, niet echt toegangelijk. De stijl is aan de minimalistische kant.</li>
+  </ul>
 
 </details>
 
@@ -86,7 +91,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="/readme-images/breakdown pdf.pdf" width="auto" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -109,6 +114,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
+Html is niet zo  moeilijk voor mij. Alleen qua hierarchie wat vragen gehad voor danny in de les, voor wanneer ik een h3 zou gebruiken ipv een p of een span etc.
+
+
+
+
+
   ### Agenda voor meeting
   samen met je groepje opstellen
 
@@ -117,6 +128,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+
+
+Vragen:
+Hoe zal ik de buttons doen van de video hoe werkt dat qua js en vormgeving daarvan.
+Wrs easy maar nog niet in verdiept. Haal je bepaalde feartues op uit de video om die controls aan te zetten en hoe target je deze dan om vorm te geven?
+
+Even snel.. dit heb ik binne 1 sec wrs gevonden op internet, maar hoe maak je ook al weer deze products scrollable horizontaal, heeft het dan nog een toegevoegde waarde om ze te laten snappen per item?
+
+Hoe zou jij doen dat als ik een item verder ga hij de progressie aangeeft, met JS?
+
+Hoe werkt het met de openvouwende footer onderdelen?
+Hoe vouwen die mooi open? wat is het engels woord voor die functionaliteit.
+Tips?
+
 
 
   ### Verslag van meeting
