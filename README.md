@@ -148,10 +148,23 @@ Tips?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - scroll animaties intersection observer goeie..
+ heeft prioriteit
+
+ - detail html elementen
+ - buttons .play. pause .muted of volume aanpassen
+
+ :root setting
+ - thema veranderd van dark naar light bijv en andersom
+
+        toggle switchen van thema
+        vanaf bepaald moment ga je naar ander thema op de pagina
+
+ - svg animatie via the nounproject
+ -  greensock is voor svg animaties (library)
+
+
+
 
 </details>
 
@@ -166,6 +179,36 @@ Tips?
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+  <img src="/readme-images/pauseplayv1.png"></img>
+  het lukte me maar niet om met de .anders principe de image content aan te passen.
+  het lukte wel maar veranderde niet terug. hij gebruikte steeds de twee images als content in css bovenopelkaar, waardoor het visueel niet veranderde. ik dacht ik gebruik deze manier omdat het ook in de les werkte, conclusie... werkt goed met teskt styling etc maar niet met images.
+
+  dus heb ik de volgende js geschreven.
+  het voegt een class toe aan het dom element en verwijderd deze wanneer er nog een keer geklikt wordt.. dit zodat hij switchen kan tussen twee images.
+
+  <img src="/readme-images/pauseplayv2.png"></img>
+  nu moet ik alleen nog aan de change een functie toevoegen die er voor zorgt dat de achgtergrond video pauzeert een doorspeelt.
+
+
+  vervolgens deze hele fucntie ook toepassen op de volume knopt om te kunnen muten.. en andersom.
+
+  tussendoor wilde ik eerste de knop perfect stylen maar ik kreeg maar geen padding om de background image heen.
+  na heeel wat strugglen en google kwam ik achter de propertie background-origin met als value content-box. gaf het volgende resultaat:
+
+  <img src="/readme-images/strugglestyling.png"></img>
+
+
+  dit principe ga ik toepassen. geleerd van een yt video van 'beyond fireship - subtle, yet beautiful scroll animation'
+  dit principe heb ik daar geleerd.
+  <img src="/readme-images/principeIntersectionObserver.pdf"></img>
+
+  intersection observer geschreven om te herkennen of de sectie in de viewport staat.. en om de teskt te hiden als je 4 seconden kijkt. zodat je de video beter kunt zien. de animatie wordt hersteld naar originele staat als de gebruiker weer begint met scrollen.
+  na heeel wat strugglen werkt het eindelijk. ik kreeg kleine tussenstapjes niet werkend.
+  met gebruik van consol.log kon ik na een tijdje het probleem vinden. hij wist niet wat 'entry' was. ik had de functie met de settimout buiten de observer geschreven. na inline de functie te schrijven werkte hij. 
+  <img src="/readme-images/functieIntersectionObserver.png"></img>
+
+
 
 
   ### Agenda voor meeting

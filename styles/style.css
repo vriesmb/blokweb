@@ -1,3 +1,778 @@
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+  --color-default:#111;
+	--color-text:#eee;
+	--color-background:#000;
+
+  --product-size: .6em;
+  --product-spacing: 
+
+
+
+  --min-vh: 0.667rem;
+  --header-height: 3rem;
+  --header-padding: 1.25rem;
+  --max: 100%;
+  --span-weight: 600;
+
+  --span-special: red;
+  --span-size: .8em;
+  --product-h2-size: 1em;
+  --product-description: .65em;
+
+}
+
+ a:link, a:visited, a:hover, a:active{
+  color: var(--color-text);
+ } 
+ /* a:link - a normal, unvisited link 
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+*/
+
+
+
+header section > h2{
+  visibility: hidden;
+}
+
+svg{
+  height: 1em;
+}
+
+body{
+    color: var(--color-text);
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+  /* HEADER */
+/****************/
+
+header{
+  z-index: 99;
+  display: block;
+  height: 3rem;
+  position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  
+  background-color: var(--color-background);
+
+  /* background-color: hotpink; */
+}
+
+header section{
+  position: relative;
+  margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--header-padding);
+    padding-right: var(--header-padding);
+    width: var(--max);
+    height: var(--max);
+  /* background-color: red; */
+}
+
+header section > div:first-of-type > img{
+  display: block;
+  left: calc(50% - 0.9rem);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 1.9rem;
+}
+
+header section nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  /* background-color: green; */
+}
+
+header section nav div:first-of-type{
+display: block;
+
+/* background-color: aqua; */
+}
+
+
+header section nav div:last-of-type{
+display: flex;
+justify-content: space-between;
+
+/* background-color: aquamarine; */
+}
+
+header section nav div:first-of-type img,
+header section nav div:last-of-type img{
+  max-width: 1.5rem;
+  
+}
+
+header section nav div:last-of-type img:nth-of-type(2),
+header section nav div:last-of-type img:nth-of-type(3){
+  margin-left: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+/*********************************/
+/* 1st section [Video x PORSCHE] */
+/*********************************/
+
+main > section:first-of-type,
+main > section:nth-of-type(4){
+  /* height: calc(var(--min-vh, 1vh)*100 - 5rem); */
+  /* background-color: blue; */
+  background-image: linear-gradient(180deg,transparent,#000);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+    width: 100%;
+    height: calc(100vh - 3rem);
+    overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.videocontent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  color: #fff; /* Text color */
+  transition: all 2s ease-in-out;
+  opacity: 0.05;
+}
+
+.videocontent.show {
+  opacity: 1;
+}
+
+
+main > section:first-of-type article > span{
+  font-family: Helvetica ,sans-serif;
+  font-size: 0.75rem;
+  font-weight: var(--span-weight);
+}
+
+main > section:first-of-type article > a:nth-of-type(1){
+  text-decoration: none;
+  padding: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: #eee solid 1px;
+  font-size: 12px;
+  font-weight: var(--span-weight);
+  letter-spacing: 0.1em;
+  margin: 1em;
+}
+
+main > section:first-of-type article > a:nth-of-type(2){
+  display: flex;
+  flex-direction: row;
+  gap: .6em;
+  align-items: center;
+}
+
+main > section:first-of-type article > a:nth-of-type(2) > svg{
+  height: 1em;
+  fill: #eee;
+}
+
+
+main > section:first-of-type article > a:nth-of-type(3){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+main > section:first-of-type article > a:nth-of-type(2),
+main > section:first-of-type article > a:nth-of-type(3) p{
+  font-size: 12px;
+  margin: 0;
+  padding: .4em;
+  text-decoration: none;
+  font-weight: var(--span-weight);
+  letter-spacing: 0.1em;
+}
+main > section:first-of-type article > a:nth-of-type(3) img{
+  max-width: 2em;
+  rotate: 90deg;
+
+}
+
+main > section:first-of-type > span{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: .2em;
+  z-index: 100;
+}
+
+main > section:first-of-type > span button:first-of-type{
+width: 10px;
+height: 10px;
+background-color: aqua;
+}
+
+#PausePlayButton,
+#VolumeButton{
+  width: 1.85em;
+  height: 1.85em;
+  border: #eee solid 1px;
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+}
+
+.playing-bg{
+  background-image: url("/images/pause.png");
+}
+
+.muted-bg{
+  background-image: url("/images/unmute.png");
+}
+
+.videocontent{
+  /* height: 40vh; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.videocontent h3{
+  font-size: 1.5rem;
+  margin: 0.3em;
+}
+
+.videocontent button p{
+color: white;
+}
+
+.videocontent button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.videocontent button img{
+  rotate: 90deg;
+  width: 2.5em;
+}
+
+/* animatie fade out en in van content als de 
+gebruiker aantal seconden in focus is 
+van de video */
+
+.fade-section {
+  opacity: 1;
+  transition: all 0.75s ease; 
+}
+
+.fade-section.fade-out {
+  opacity: 0; 
+}
+
+
+.title-wrapper {
+  /* position: relative;
+  opacity: 1; */
+  transition: all 1s cubic-bezier(0.6, 0.02, 1, 1); 
+}
+
+.title-wrapper.move-down {
+  opacity: 0.2; 
+  font-size: 0.9em;
+  transform: translateY(1em);
+  position: relative;
+  transform: translateX(-50%);
+}
+
+
+/*********************************/
+/* 2nd section [watches] */
+/*********************************/
+
+main > section:nth-of-type(2){
+  background-image: url(
+    https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw79f46b18/images/Landing/Porsche/Chronosprint/product-carousel-background-m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+main > section:nth-of-type(2) article,
+main > section:nth-of-type(5) article{
+  display: grid;
+  grid-template-rows: .1em max-content max-content max-content max-content max-content 1em;
+  grid-template-columns: 2.5em 5em 2em 2.5em;
+  background-color: #fff;
+  color: var(--color-default);
+  margin: 1em;
+  scroll-snap-align: center;
+}
+
+main > section:nth-of-type(2) article > p:first-of-type,
+main > section:nth-of-type(5) article > p:first-of-type{
+  grid-row: 2/3;
+  grid-column: 1/3;
+  justify-self: center;
+}
+
+main > section:nth-of-type(2) article p span,
+main > section:nth-of-type(5) article p span{
+  text-transform: uppercase;
+  font-size: .6em;
+  color: var(--span-special);
+}
+
+main > section:nth-of-type(2) article svg,
+main > section:nth-of-type(5) article svg{
+  grid-row: 2/3;
+  grid-column: 3/5;
+  align-self: center;
+  justify-self: center;
+  margin-left: 1em;
+}
+
+main > section:nth-of-type(2) article img,
+main > section:nth-of-type(5) article img{
+  grid-row: 3/4;
+  grid-column: 2/4;
+  align-self: center;
+  justify-self: center;
+  margin: 1em;
+  max-width: 5em;
+}
+
+main > section:nth-of-type(2) article h3,
+main > section:nth-of-type(5) article h3{
+  grid-row: 4/5;
+  grid-column: 1/5;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--product-size);
+  letter-spacing: .1em;
+  text-align: center;
+  margin: 0.1em;
+}
+
+main > section:nth-of-type(2) article > p:nth-of-type(2),
+main > section:nth-of-type(5) article > p:nth-of-type(2){
+  grid-row: 5/6;
+  grid-column: 1/5;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--span-size);
+  margin: 0;
+  font-size: calc(var(--span-size) - 0.2em);
+  color: gray;
+}
+
+/* main > section:nth-of-type(2) article > p:last-of-type
+main > section:nth-of-type(5) article > p:last-of-type{
+  
+} */
+
+main > section:nth-of-type(2) article > p:nth-of-type(3),
+main > section:nth-of-type(5) article > p:nth-of-type(3){
+  font-size: var(--span-size);
+  margin-top: .3em;
+  margin-bottom: -.25em;
+
+  grid-row: 6/7;
+  grid-column: 2/4;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+}
+
+/* animatie gedeelte */
+.product-showcase-wrapper {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.75s ease;
+    overflow-x: hidden;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    scroll-snap-type: x mandatory;
+    flex-direction: column;
+}
+
+.product-showcase-items{
+  display: flex;
+  width: 100vw;
+  overflow-x: auto;
+  transition: all 1.25s ease;
+  transform: translateX(0em); 
+  margin-bottom: 2.5em;
+  scroll-snap-type: x mandatory;
+}
+
+.product-showcase-items.animate{
+  transform: translateX(0em);
+}
+
+main > section:nth-of-type(2) a{
+  text-decoration: none;
+    padding: 1.5em;
+    border-top: #eee solid 1px;
+    border-bottom: #eee solid 1px;
+    font-size: .7em;
+    font-weight: var(--span-weight);
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+
+
+
+/*********************************/
+/* 3RD section [2 highlighted 
+      (article) products] */
+/*********************************/
+
+main > section:nth-of-type(3) article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - var(--header-height));
+}
+
+main > section:nth-of-type(3) article h2{
+  font-size: var(--product-h2-size);
+  padding-top: 2em;
+}
+
+main > section:nth-of-type(3) article p{
+  font-size: var(--product-description);
+  color: gray;
+  padding: 1em;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+main > section:nth-of-type(3) article a{
+  display: flex;
+  flex-direction: row;
+  gap: .6em;
+  align-items: center;
+
+
+
+  font-size: 12px;
+  margin: 0;
+  padding: .4em;
+  text-decoration: none;
+  font-weight: var(--span-weight);
+  letter-spacing: 0.1em;
+}
+
+main > section:nth-of-type(3) article a > svg{
+  height: 1em;
+  fill: #eee;
+}
+
+
+
+/*********************************/
+/* 4TH section [video] */
+/*********************************/
+
+
+main > section:nth-of-type(4) article > span{
+  font-family: Helvetica ,sans-serif;
+  font-size: 0.75rem;
+  font-weight: var(--span-weight);
+}
+
+
+main > section:nth-of-type(4) article > a{
+  text-decoration: none;
+  padding: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: #eee solid 1px;
+  font-size: 12px;
+  font-weight: var(--span-weight);
+  letter-spacing: 0.1em;
+  margin: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************/
+/* 7ND/8TH section [COLLECTIONS] */
+/*********************************/
+
+.collections{
+  max-width: 100vw;
+  height: max-content;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.collections > div{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.collections > h2{
+  font-size: var(--product-h2-size);
+  text-align: center;
+}
+
+.collections article{
+  display: grid;
+    grid-template-rows: 4fr 1fr 1fr;
+    grid-template-columns: max-content;
+    background-color: #fff;
+    color: var(--color-default);
+    margin: 1em;
+    scroll-snap-align: center;
+}
+
+.collections > p:first-of-type{
+  font-size: var(--product-description);
+  color: gray;
+  padding: 1em;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.collections article > h3,
+.collections article > h3 > span{
+  font-size: var(--product-h2-size);
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.collections article > a{
+ font-size: var(--product-h2-size);
+ text-align: center;
+  color: var(--color-text);
+  grid-column: 1/4;
+  grid-row: 3/4;
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.6em;
+    align-items: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 0.4em;
+    text-decoration: none;
+    font-weight: var(--span-weight);
+    letter-spacing: 0.1em;
+    justify-content: center;
+}
+.collections article > a svg{
+fill: var(--color-text);
+height: 1em;
+}
+.collections article img{
+  grid-column: 1/4;
+  grid-row: 1/5;
+  max-width: 20em;
+  max-height: 21em;
+  object-fit: cover;
+
+  transition: all 1s ease-in-out;
+
+  
+}
+
+/* .collections article img{
+  scale: 1.25;
+} */
+
+
+.collections article h3 span{
+  font-size: 0.75rem;
+  font-weight: var(--span-weight);
+}
+
+
+
+
+
+.horizontal-line {
+  display: block; 
+  width: 9px;
+  height: 2.5px;
+  background-color: white; 
+}
+
+.horizontal-line.unactive {
+  display: block;
+  width: 9px;
+  height: 2.5px;
+  background-color: gray; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -137,7 +912,7 @@ note: |
 
 category: embedded elements
 */
-img, svg, video, canvas {
+img, video, canvas {
   height: auto;
 }
 
@@ -205,201 +980,4 @@ category: legacy browsers
 [type='radio'] {
   box-sizing: border-box;
   padding: 0;
-}
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-  --color-default:#111;
-	--color-text:#eee;
-	--color-background:#111;
-
-  -webkit-font-smoothing: antialiased;
-
-  --min-vh: 0.667rem;
-  --header-height: 3rem;
-  --header-padding: 1.25rem;
-  --max: 100%;
-}
-
-header section > h2{
-  visibility: hidden;
-}
-
-body{
-    color: var(--color-deafault);
-    font-family: 'Proxima Nova Th',Arial,sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-}
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/****************/
-  /* HEADER */
-/****************/
-
-header{
-  z-index: 99;
-  display: block;
-  height: 3rem;
-  position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  
-  background-color: #111;
-
-  /* background-color: hotpink; */
-}
-
-header section{
-  position: relative;
-  margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--header-padding);
-    padding-right: var(--header-padding);
-    width: var(--max);
-    height: var(--max);
-  /* background-color: red; */
-}
-
-header section > div:first-of-type > img{
-  display: block;
-  left: calc(50% - 0.9rem);
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 1.9rem;
-}
-
-header section nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 3rem;
-  /* background-color: green; */
-}
-
-header section nav div:first-of-type{
-display: block;
-
-/* background-color: aqua; */
-}
-
-
-header section nav div:last-of-type{
-display: flex;
-justify-content: space-between;
-
-/* background-color: aquamarine; */
-}
-
-header section nav div:first-of-type img,
-header section nav div:last-of-type img{
-  max-width: 1.5rem;
-  
-}
-
-header section nav div:last-of-type img:nth-of-type(2),
-header section nav div:last-of-type img:nth-of-type(3){
-  margin-left: 1.4rem;
-}
-
-
-
-/*********************************/
-/* 1st section [Video x PORSCHE] */
-/*********************************/
-main > section:first-of-type{
-  /* height: calc(var(--min-vh, 1vh)*100 - 5rem); */
-  /* background-color: blue; */
-  background-image: linear-gradient(180deg,transparent,#000);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-    width: 100%;
-    height: calc(100vh - 3rem);
-    overflow: hidden;
-}
-
-#background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 20px;
-  color: #fff; /* Text color */
-}
-
-main > section:first-of-type article > span{
-  font-family: Helvetica ,sans-serif;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
-
-
-
-/*********************************/
-/* 2nd section [watches] */
-/*********************************/
-
-main > section:nth-of-type(2){
-background-image: url(
-  https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw79f46b18/images/Landing/Porsche/Chronosprint/product-carousel-background-m.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-
-.content{
-  /* height: 40vh; */
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  bottom: 0;
-}
-
-.content h3{
-  font-size: 1.5rem;
-  margin: 0.3em;
-}
-
-.content button p{
-color: white;
-}
-
-.content button{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: transparent;
-}
-
-.content button img{
-  rotate: 90deg;
-  width: 2.5em;
 }
