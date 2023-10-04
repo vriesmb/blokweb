@@ -211,24 +211,6 @@ Tips?
 
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
 </details>
 
 
@@ -243,6 +225,15 @@ Tips?
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  <ul>
+    <li> ik heb de kleurcontrast verbeterd op de website</li>
+    <li>video laat ik automatisch pauzeren bij wegscrollen, ook als de audio aan stond, gaat deze op pauze want dat is prettig en goed voor de usability en toegangelijkheid</li>
+    <li>Website is visueel nu goed toegankelijk. De stijl is aan de minimalistische kant was al wel prima, maar nu strakker geworden, meer hierarchie en de gebruiker heeft de keuze om over de gehele website te klikken op darkmode switch en zo verander de gehele website van visuele tint..</li>
+    <li>mijn website is helaas nog steeds niet goed tabbaar. daar heb ik geen tijd voor gehad en ik was niet bij de les van de laastste toegangelijheids test dus helaas niets meegekregen.</li>
+  </ul>
+
+
+
 </details>
 
 
@@ -254,27 +245,24 @@ Tips?
 <details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  <img src="/readme-images/ss1.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss2.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss7.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss8.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss9.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss10.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss11.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss12.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss13.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss14.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss15.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss16.png" width="375px" alt="probleem of progressie screenshot">
+  <img src="/readme-images/ss17.png" width="375px" alt="probleem of progressie screenshot">
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+ 
 
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -287,18 +275,46 @@ Tips?
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
-
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb zo ontzettend veel geleerd. Dat is niet normaal.
+  Ik begon dit project met karige kennis aan javascript.
+  Ik heb me zo veel ingelezen en zo diep in gaan storten dat ik nu echt bizar trots op mezelf ben. Ik ben nogsteeds geen professional want ik heb aan sommige stukken code wel 4a5 uur gezeten en zitten ploegen, maargoed het werkt uiteindelijk wel.
+  zou nog zo graag zo veel meer willen toevoegen, maar dat is niet goed voor mijn mentale en trouwens ook fysieke gezondheid.
+
+  ik heb onder andere geleerd werken met:
+    - intersection observer api
+    - localstorage
+    - custom properties
+    - video en geluid en dit koppelen en aasnsturen met javascript
+    - dom manipulatie
+    - svg animeren. simpel maar chique.
+    
+    daarnaast kan ik nu:
+    - foldable cards maken (timpepiece pages bij technical specs)
+        hier ben ik heeeel trots op. heb bij deze niet online gezocht naar oplossingen, puur goed nadenken en als ik tegen een bug aan liep kijken of ik iets kon spotten bij de originele website, maar daar was niet per se heel veel te vinden.
+    - calculeren bij houden van favoriete items, deze opslaan en toevoegen aan dee bekijkbaar mandje... en als je liked dat je een hart geanimeerd in beeld krijgt.
+    - ik heb geleerd om te gaan met video en geluid op een manier met intersection observer. pauzeren, spelen, geluid aan uit etc.
+
+
+    en dit is al wat nu even in mij opkomt.
+    dit was een zeer waardevol project en heeft mij aangezet om nog meer te willen leren.
+
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+
+  geen tijd gehad voor parralax effecten.
+
+  en het lukte me niet mijn producten scroller van rechts naar links in de viewport te animeren als de sectie in de viewport kwam. problemen met overflow etc.
+  uren lopen ploeteren, maar mocht niet baten.
+
+  de verticlae text was wel gelukt van de videos, zelfde principe, maar dan visueel simpeler.
+
+  geen tijd voor tab settings focusable elements
+
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -316,8 +332,32 @@ Tips?
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
 
+  er zijn geen stukken code van websites gekomen.
+  ik zou geen bronnen aan stukken code kunnen koppelen.
+  ik lees me in 4, 5, 8, 20 , 40, 100 websites en ga vervolgens wat proberen.
+  no way, dat ik van al die duizenden websites die ik bezocht heb nog weet wat ik gebruikt heb. belangrijkste staan hieronder. ik scrhijf code zelf dus bronnen per code is niet van toepassing. als je dat niet doet, leer je er niets van namelijk.
+  ik lees rond. vraag rond bij bekenden. en probeer het mezelf te leren en uit te leggen.
+  op die manier kom ik er wel.
+
+  1. https://css-tricks.com/change-color-of-svg-on-hover/
+  2. https://css-tricks.com/snippets/svg/svg-hamburger-menu/
+  3. https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit
+  4. https://www.geeksforgeeks.org/css-stroke-dashoffset-property/
+  5. https://css-tricks.com/how-to-animate-the-details-element/
+  6. https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
+  7. https://stackoverflow.com/questions/37801882/how-to-change-css-root-color-variables-in-javascript 
+  8.  https://codedamn.com/news/javascript/dollar-sign-in-js
+  9. https://stackoverflow.com/questions/56300132/how-to-override-css-prefers-color-scheme-setting
+  10. https://blog.webdevsimplified.com/2022-01/intersection-observer/
+  11. https://stackoverflow.com/questions/19784453/finding-the-index-of-the-element-with-class-in-native-javascript
+  12. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return
+  13. https://www.javascripttutorial.net/dom/css/add-styles-to-an-element/
+  14. https://www.youtube.com/watch?v=MKpZadkuT-0
+  15. https://stackoverflow.com/questions/16053357/what-does-foreach-call-do-in-javascript
+  16. https://stackoverflow.com/questions/37942920/add-class-to-the-clicked-button-on-nodelist-in-javascript
+  17. https://stackoverflow.com/questions/8977957/can-i-change-the-height-of-an-image-in-css-before-after-pseudo-elements
+ 18. https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/
+ 19. https://www.w3schools.com/jsref/jsref_foreach.asp
+ 20. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 </details>

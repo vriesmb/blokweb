@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-e2f3a43e-dd5c-496f-83fe-2cd9fce3dc56" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.54321 3">
+  <defs>
+    <style>
+      .uuid-8f5d3d63-7ea7-4044-8a48-125ba33a7436 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="uuid-b502d48f-408b-4cb5-a987-53954b12053a" data-name="Layer 1">
+    <line class="uuid-8f5d3d63-7ea7-4044-8a48-125ba33a7436" x1="1.5" y1="1.5" x2="22.04321" y2="1.5"/>
+  </g>
+</svg>
