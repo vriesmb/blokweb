@@ -247,7 +247,7 @@ justify-content: space-between;
 header > section:first-of-type nav div:first-of-type img,
 header > section:first-of-type nav div:last-of-type img{
   max-width: 1.5rem;
-  
+  max-height: 1.5rem;
 }
 
 header > section:first-of-type nav div:last-of-type img:nth-of-type(2),
@@ -591,11 +591,11 @@ background-color: aqua;
 }
 
 .playing-bg{
-  background-image: url("/images/pause.png");
+  background-image: url("./images/pause.png");
 }
 
 .muted-bg{
-  background-image: url("/images/unmute.png");
+  background-image: url("./images/unmute.png");
 }
 
 .videocontent{
@@ -664,7 +664,7 @@ van de video */
 
 .product-showcase-wrapper{
   background-image: url(
-    https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw79f46b18/images/Landing/Porsche/Chronosprint/product-carousel-background-m.png);
+    "https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw79f46b18/images/Landing/Porsche/Chronosprint/product-carousel-background-m.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -902,7 +902,7 @@ main > section:nth-of-type(5) article > p:nth-of-type(3){
     margin-left: 40vw;
     margin-right: 40vw;
     opacity: 0;
-    content: url(/images/heart-solid.svg);
+    content: url("./images/heart-solid.svg");
 }
 
 @keyframes heart_animation {
