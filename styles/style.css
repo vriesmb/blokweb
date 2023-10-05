@@ -560,7 +560,7 @@ header > section:nth-of-type(2) article:nth-of-type(3) button:nth-of-type(2){
 }
 .porschecollab article > a:nth-of-type(3) img{
   max-width: 2em;
-  rotate: 90deg;
+  transform: rotate(90deg);
 
 }
 
@@ -591,11 +591,11 @@ background-color: aqua;
 }
 
 .playing-bg{
-  background-image: url("./images/pause.png");
+  background-image: url(/images/play.png);
 }
 
 .muted-bg{
-  background-image: url("./images/unmute.png");
+  background-image: url(/images/unmute.png);
 }
 
 .videocontent{
@@ -625,7 +625,7 @@ color: white;
 }
 
 .videocontent button img{
-  rotate: 90deg;
+  transform: rotate(90deg);
   width: 2.5em;
 }
 
@@ -895,7 +895,8 @@ main > section:nth-of-type(5) article > p:nth-of-type(3){
   animation: heart_animation 5s ease-in-out;
   transition: all 5s ease-in-out;
     position: absolute;
-    transform: translate(50% 50%);
+    transform: translateY(50%);
+    transform: translateX(50%);
     width: 4em;
     margin-top: 30vh;
     height: 4em;
@@ -913,20 +914,23 @@ main > section:nth-of-type(5) article > p:nth-of-type(3){
   10%{
     opacity: 0.2;
     transform: rotate(-6deg);
-    transform: translate(57% 62%);
+    transform: translateY(57%);
+    transform: translateX(62%);
 
   }
   20%{
     opacity: 0.6;
   }
   30%{
-    transform: translate(57% 72%);
+    transform: translateY(57%);
+    transform: translateX(72%);
     transform: rotate(4deg);
 
   }
   40%{
     opacity: 1;
-    transform: translate(50% 76%);
+    transform: translateY(50%);
+    transform: translateX(76%);
     transform: rotate(6deg);
 
   }
@@ -938,7 +942,8 @@ main > section:nth-of-type(5) article > p:nth-of-type(3){
   }
   70%{
     opacity: .8;
-    transform: translate(48% 89%);
+    transform: translateY(48%);
+    transform: translateX(89%);
     transform: rotate(-3deg);
 
   }
@@ -951,7 +956,8 @@ main > section:nth-of-type(5) article > p:nth-of-type(3){
   }
   100%{
     opacity: 0;
-    transform: translate(50% 100%);
+    transform: translateY(50%);
+    transform: translateX(100%);
     transform: rotate(0deg);
     margin-top: 0vh;
   }
@@ -1095,7 +1101,7 @@ height: 1em;
 }
 
 .collections article img:hover{
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 
@@ -1467,11 +1473,11 @@ height: 1em;
 
 
 .promises article:first-of-type svg{
-  scale: 0.6;
+  transform: scale(0.6);
 }
 
 .promises article:nth-of-type(2) svg{
-  scale: 0.7;
+  transform: scale(0.7);
 }
 
 
