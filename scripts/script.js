@@ -36,7 +36,7 @@ function checkVideo() {
         // video is in viewport en speelt dus af als deze is gepauzeerd
             // daarnaast wat styling adden en removen om de knoppen dynamisch te maken afhankelijk van de playback
         if (video.paused) {
-            togglePausePlayButton.style.backgroundImage = "url('/images/pause.png')";
+            togglePausePlayButton.style.backgroundImage = "url('images/pause.png')";
             togglePausePlayButton.classList.remove('paused-bg');
             togglePausePlayButton.classList.add('playing-bg');
             video.play();
@@ -45,7 +45,7 @@ function checkVideo() {
         // Video is buiten het viewport, pauzeert met een vertraging van 0,8 seconden
         if (!video.paused) {
             setTimeout(function() {
-                togglePausePlayButton.style.backgroundImage = "url('/images/play.png')";
+                togglePausePlayButton.style.backgroundImage = "url('images/play.png')";
                 togglePausePlayButton.classList.remove('playing-bg');
                 togglePausePlayButton.classList.add('paused-bg');
                 video.pause();
@@ -139,14 +139,14 @@ togglePausePlayButton.addEventListener('click', function() {
     // Check if the button has the "paused-bg" class
     if (togglePausePlayButton.classList.contains('paused-bg')) {
         // Switch to the alternate background image
-        togglePausePlayButton.style.backgroundImage = "url('/images/pause.png')";
+        togglePausePlayButton.style.backgroundImage = "url('images/pause.png')";
         // Replace the "paused-bg" class with "playing-bg"
         togglePausePlayButton.classList.remove('paused-bg');
         togglePausePlayButton.classList.add('playing-bg');
         video.play();
     } else {
         // Switch back to the original background image
-        togglePausePlayButton.style.backgroundImage = "url('/images/play.png')";
+        togglePausePlayButton.style.backgroundImage = "url('images/play.png')";
         // Replace the "playing-bg" class with "paused-bg"
         togglePausePlayButton.classList.remove('playing-bg');
         togglePausePlayButton.classList.add('paused-bg');
@@ -174,14 +174,14 @@ toggleVolumeButton.addEventListener('click', function() {
     // Check if the button has the "muted-bg" class
     if (toggleVolumeButton.classList.contains('muted-bg')) {
         // Switch to the alternate background image
-        toggleVolumeButton.style.backgroundImage = "url('/images/mute.png')";
+        toggleVolumeButton.style.backgroundImage = "url('images/mute.png')";
         // Replace the "muted-bg" class with "unmuted-bg"
         toggleVolumeButton.classList.remove('muted-bg');
         toggleVolumeButton.classList.add('unmuted-bg');
         toggleMute();
     } else {
         // Switch back to the original background image
-        toggleVolumeButton.style.backgroundImage = "url('/images/unmute.png')";
+        toggleVolumeButton.style.backgroundImage = "url('images/unmute.png')";
         // Replace the "unmuted-bg" class with "muted-bg"
         toggleVolumeButton.classList.remove('unmuted-bg');
         toggleVolumeButton.classList.add('muted-bg');
