@@ -591,11 +591,11 @@ background-color: aqua;
 }
 
 .playing-bg{
-  background-image: url(images/play.png);
+  background-image: url(/images/play.png);
 }
 
 .muted-bg{
-  background-image: url(images/unmute.png);
+  background-image: url(/images/unmute.png);
 }
 
 .videocontent{
