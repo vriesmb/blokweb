@@ -591,11 +591,11 @@ background-color: aqua;
 }
 
 .playing-bg{
-  background-image: url(/images/play.png);
+  background-image: url(https://vriesmb.github.io/blokweb/images/play.png);
 }
 
 .muted-bg{
-  background-image: url(/images/unmute.png);
+  background-image: url(https://vriesmb.github.io/blokweb/images/unmute.png);
 }
 
 .videocontent{
