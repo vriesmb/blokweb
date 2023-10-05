@@ -591,11 +591,11 @@ background-color: aqua;
 }
 
 .playing-bg{
-  background-image: url(/images/play.png);
+  background-image: url(images/play.png);
 }
 
 .muted-bg{
-  background-image: url(/images/unmute.png);
+  background-image: url(images/unmute.png);
 }
 
 .videocontent{
@@ -903,7 +903,7 @@ main > section:nth-of-type(5) article > p:nth-of-type(3){
     margin-left: 40vw;
     margin-right: 40vw;
     opacity: 0;
-    content: url("./images/heart-solid.svg");
+    content: url("images/heart-solid.svg");
 }
 
 @keyframes heart_animation {
